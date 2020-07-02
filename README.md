@@ -8,7 +8,7 @@ Gelieve deze respository te klonen en je wijzigingen voor elk onderdeel vast te 
 ## Deel 1
 
 ~~* Verbeter de routing die in de site wordt gebruikt.~~  Route voor delete aangepast en de formulier voor product verwijderen aangepast.
-* Voeg validatie toe aan het nieuwe productproces en zorg ervoor dat de naam van het product uniek is.
+~~* Voeg validatie toe aan het nieuwe productproces en zorg ervoor dat de naam van het product uniek is.~~ Validatie toegevoegd en blade template aangepast
 
 ## Deel 2
 
