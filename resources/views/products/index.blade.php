@@ -23,11 +23,11 @@
     <ul>
         @foreach (\App\Product::all() as $product)
         <li>
-            {!! $product->name !!}
+            {{ $product->name }}
             <form action="/products/delete" method="POST">
                 @csrf
                 {{ method_field('DELETE') }}
-                <input type="hidden" name="id" value="@php(print $product->id)" />
+                <input type="hidden" name="id" value="{{$product->id}}" />
                 <button type="submit">delete</button>
             </form>
         </li>
@@ -55,14 +55,12 @@
     @endif
     <h2>New product</h2>
     <form action="/products/new" method="POST">
-
         @csrf
         <input type="text" name="name" placeholder="name" /><br />
         <textarea name="description" placeholder="description"></textarea><br />
         <input type="text" name="tags" placeholder="tags" /><br />
         <button type="submit">Submit</button>
     </form>
-
 </body>
 
 </html>
