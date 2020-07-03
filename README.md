@@ -19,7 +19,7 @@ Gelieve deze respository te klonen en je wijzigingen voor elk onderdeel vast te 
 
 Momenteel doet het veld "beschrijving" in het formulier niets.
 
-* Gelieve de producttabel te updaten om een "description" veld op te nemen, en het in te vullen vanuit dit formulier.
+~~* Gelieve de producttabel te updaten om een "description" veld op te nemen, en het in te vullen vanuit dit formulier.~~ database aangepast en controller aangepast
 
 ## Deel 4
 
