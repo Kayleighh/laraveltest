@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 Route::get('/products', 'ProductController@index');
-Route::post('/products/new', 'ProductController@new');
+Route::post('/products', 'ProductController@new');
 Route::post('/products/newTag', 'ProductController@newTag');
 Route::delete('/products/delete', 'ProductController@delete');

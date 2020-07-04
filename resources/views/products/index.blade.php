@@ -54,7 +54,7 @@
     </div>
     @endif
     <h2>New product</h2>
-    <form action="/products/new" method="POST">
+    <form action="/products" method="POST">
         @csrf
         <input type="text" name="name" placeholder="name" /><br />
         <textarea name="description" placeholder="description"></textarea><br />

@@ -7,6 +7,9 @@ use App\User;
 use App\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Events\ProductCreated;
+use App\Listeners\ProductCreatedListener;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -38,19 +41,20 @@ class ProductController extends Controller
             );
             //attach tags to product.
             $product->tags()->attach($existingTag->id);
+
+            
         }
-        return redirect('/products')->with('status', 'Product created');
+        //call event
+        event(new ProductCreated($product));
+        return redirect('/products');
     }
 
    
     public function delete(Request $request)
     {
-        //store
         $deleteProduct = Product::findOrfail($request->id);
         $deleteProduct->delete();
 
-
-        // DB::delete("DELETE FROM products WHERE id = ".$request->id);
 
         return redirect('/products')->with('status', 'Product was deleted');
     }

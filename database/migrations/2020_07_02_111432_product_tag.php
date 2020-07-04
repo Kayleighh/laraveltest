@@ -14,8 +14,8 @@ class ProductTag extends Migration
     public function up()
     {
         Schema::create('product_tag', function (Blueprint $table) {
-            $table->foreignId('products_id')->constrained();
-            $table->foreignId('tag_id')->constrained();
+            $table->foreignId('products_id')->references('id')->on('products')->onDelete('cascade');;
+            $table->foreignId('tag_id')->references('id')->on('tags')->onDelete('cascade');;
         });
     }
 
