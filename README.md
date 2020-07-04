@@ -12,8 +12,8 @@ Gelieve deze respository te klonen en je wijzigingen voor elk onderdeel vast te 
 
 ## Deel 2
 
-~~* Los alle veiligheidsproblemen op die je opmerkt in de controller.
-* Los eventuele beveiligingsproblemen op, bugs/verbeteringen aan de blade templates (maak je geen zorgen over de lay-out en styling). ~~ 
+~~* Los alle veiligheidsproblemen op die je opmerkt in de controller.~~
+~~* Los eventuele beveiligingsproblemen op, bugs/verbeteringen aan de blade templates (maak je geen zorgen over de lay-out en styling).~~
 
 Wijzigingen in de ProductController aangebracht en de blade template aangepast.
 
