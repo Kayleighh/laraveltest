@@ -39,5 +39,5 @@ Momenteel doet het "tags" veld in het formulier niets. We willen graag tags aanm
 
 ## Deel 6
 
-Maak een nieuwe ProductCreated event wanneer een product wordt gecreëerd.
-Luister naar de ProductCreated event (listener) en stuur een eenvoudige melding naar alle gebruikers om hen te laten weten dat het product is gemaakt.
+~~Maak een nieuwe ProductCreated event wanneer een product wordt gecreëerd.~~
+~~Luister naar de ProductCreated event (listener) en stuur een eenvoudige melding naar alle gebruikers om hen te laten weten dat het product is gemaakt.~~ Event en Listener gecreëerd.
